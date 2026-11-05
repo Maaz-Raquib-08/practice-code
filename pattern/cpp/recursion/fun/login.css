@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.inputbox {
+  margin: 20px;
+  position: relative;
+  color: white;
+}
+.inputbox input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding: 4px 0;
+
+}
+.forget {
+  margin: 10px;
+}
+button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 40px;
+  width: 90%;
+  border-radius: 40px;
+  margin: 10px;
+  border: none;
+  transition: 0.5s;
+  
+}
+.mainbar {
+  position: relative;
+  background-image: url(mini.jpg);
+  border: 0.5px solid rgba(255, 255, 255, o.5);
+  background-position: center;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  display: flex;
+}
+.bar {
+    border: 1.2px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    padding-right: 1rem; 
+    padding-left: 1rem;
+     
+}
+h1 {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  color: white;
+}
+.forget {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11%;
+  color: white;
+}
+
+.forget a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.register {
+  color: white;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  padding-left: 15px;
+}
+.register a {
+  text-decoration: none;
+  color: white;
+}
+.register p a:hover {
+  text-decoration: underline;
+  color: black;
+}
+#forget:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.logIn:hover{
+    box-shadow: 0 0 15px black;
+}
+

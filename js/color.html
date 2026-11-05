@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .day{
+            background-color: aqua;
+        }
+        .night{
+            background-color:black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <button class="d">DAY</button>
+    <button class="n">NIGHT</button>
+  <script>
+        let body= document.querySelector('body');
+        let btn1= document.querySelector('.d');
+        let btn2= document.querySelector('.n');
+        btn1.addEventListener("click", function(){
+            body.classList.remove('night');
+            body.classList.add('day');
+        });
+        btn2.addEventListener("click", function(){
+            body.classList.remove('day');
+            body.classList.add('night');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 50%; margin: auto; }
+        .product { display: flex; justify-content: space-between; margin-bottom: 10px; }
+        .cart { margin-top: 20px; border-top: 2px solid #000; padding-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Products</h2>
+        <div class="product">
+            <span>Product 1 - $10</span>
+            <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <span>Product 2 - $15</span>
+            <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <span>Product 3 - $20</span>
+            <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+        </div>
+        
+        <h2>Cart</h2>
+        <div class="cart" id="cart"></div>
+    </div>
+
+    <script>
+        let cart = [];
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            updateCart();
+        }
+
+        function updateCart() {
+            let cartDiv = document.getElementById("cart");
+            cartDiv.innerHTML = "";
+            let total = 0;
+            cart.forEach(item => {
+                cartDiv.innerHTML += <p>${item.name} - $${item.price}</p>;
+                total += item.price;
+            });
+            cartDiv.innerHTML += <h3>Total: $${total}</h3>;
+        }
+    </script>
+</body>
+</html>

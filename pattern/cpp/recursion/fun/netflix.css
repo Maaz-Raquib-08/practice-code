@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* border-bottom: 111px; */
+    background-color: black;
+    /* background-origin: padding-box; */
+
+}
+.mainNetflixContaniner{
+    /* border: 2px solid red; */
+    /* padding: 1rem 2rem;  */
+    /* background-image:url("./back.jpg"); */
+    /* filter: blur(15px); */
+    /* position: relative; */
+
+
+}
+.backgroundContainer{ 
+    background-image: url("./back.jpg");
+    filter: blur(16px);
+    height: 100vh;
+    /* bottom: 100px; */
+    position: relative;
+     
+}
+.pinkoverlay{
+    background-color: rgb(104,3,20);
+    height: 100%;
+    width: 100%;
+}
+.contentContainer{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0rem 2rem;
+}
+nav{
+    /* border: 2px solid green; */
+    height: 20vh;
+
+}
+.upperNavbarSection{
+    /* border: 2px solid blue; */
+    display: flex;
+    height: 50%;
+    padding: .2rem;
+}
+.upperNavbarLeftSection{
+    /* border: 2px solid red; */
+    width: 50%;
+
+} 
+.netflixlogo{
+    width: 30%;
+}
+.upperNavbarRightSection{ 
+    /* border: 2px solid green; */
+    width: 50%;
+    
+}  
+.navbarButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 2px solid green; */
+    height: 100%;
+
+}
+.languageButton{
+
+    display: flex;
+    padding: .4rem .8rem;
+    border-radius: 100px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+}
+.signButton{
+    display: flex;
+    padding: .4rem .8rem;
+    border-radius: 100px;
+    background: white;
+    border: 1px solid white;
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.languageButton p{
+    margin-left: 5px;
+}
+.lowerNavbarSection{
+    /* border: 2px solid red; */
+    height: 50%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    color: white;
+ 
+}
+.menulist{
+    /* border: 2px solid green; */
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 2px 3px 14px transparent;
+    height: 7vh;
+}
+.menulist li{
+    /* border:  2px solid red; */
+    height: 100%;
+    display: flex;
+    align-items:center ;
+}
+.bannerSection{
+     /* border: 2px solid red; */
+    height:90vh ;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7d2359a4-434f-4efa-9ff3-e9d38a8bde7f/web/IN-en-20250707-TRIFECTA-perspective_4faa9280-a2c5-4e07-aafc-a45ce43fea09_large.jpg");
+    /* background:bottom rgba(0,0,0,.3); */
+    background-size: 100% 100%;   
+    border-radius: 20px;
+    /* margin-top: 1rem; */
+    position: relative;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(360deg, rgba(0, 0, 0, 0.9000) 0.000%, rgba(0, 0, 0, 0.8965) 8.500%, rgba(0, 0, 0, 0.8861) 17.00%, rgba(0, 0, 0, 0.8688) 25.50%, rgba(0, 0, 0, 0.8444) 34.00%, rgba(0, 0, 0, 0.8132) 42.50%, rgba(0, 0, 0, 0.7750) 51.00%, rgba(0, 0, 0, 0.7368) 59.50%, rgba(0, 0, 0, 0.7056) 68.00%, rgba(0, 0, 0, 0.6813) 76.50%, rgba(0, 0, 0, 0.6639) 85.00%, rgba(0, 0, 0, 0.6535) 93.50%, rgba(0, 0, 0, 0.6500) 102.0%);
+    border-radius: 20px;
+    /* z-index: 2; */
+}
+.bannercontanier{
+    border: 2px solid red;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+.bannercontanier h2{
+    font-size: 3rem;
+    /* border: 2px solid green; */
+    width: 40%;
+    text-align: center;
+
+}
+.bannercontanier h4{
+    font-size: 1rem;
+    /* margin-top: ; */
+    margin: 5px;
+}
+.bannercontanier p{
+    font-size: 1.3rem;
+    margin: 20px;
+    /* border: 2px solid red; */
+    width: 45%;
+    text-align: center;
+
+}
+.inputContainer{
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    /* border-radius: 100px; */
+
+
+}
+.EmailInput{
+    border: 1px solid gray;
+    padding: 1rem ;
+    border-radius: 5px;
+    outline: none;
+    width: 60%;
+    /* display: flex; */
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+}
+.EmailInput::placeholder{
+    color: white;
+}
+
+.getstarted{
+       width:25%;
+    /* padding: 0rem; */
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 5;
+    /* align-items: center; */
+    margin-right: 80px;
+}
+.carouselSection{
+    border: 2px solid red;
+    color: white;
+     
+}
+.carouselcardConatiner{
+    border: 2px solid green;
+    height: 100%;
+    width: 100%;  
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* overflow-y: auto; */
+
+}
+.carouselCard{
+    width: 17%;
+    /* border: 2px solid yellow; */
+    height: 48vh;
+    flex-shrink: 0;
+    display: flex;
+
+}
+.carouselImageContiner{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+.carouselImageContiner img{
+    width: 100%;
+    height: 100%;    
+}
+
+
